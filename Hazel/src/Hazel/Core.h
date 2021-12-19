@@ -1,6 +1,6 @@
 #pragma once
 
-#ifdef HZ_FLATFORM_WINDOWS
+#ifdef HZ_PLATFORM_WINDOWS
 	#ifdef HZ_BUILD_DLL
 		#define HAZEL_API __declspec(dllexport)
 	#else
@@ -8,4 +8,7 @@
 	#endif
 #else
 	#error Hazel only support Windows!
-#endif // HZ_FLATFORM_WINDOW
+#endif // HZ_PLATFORM_WINDOW
+
+
+#define BIT(x) (1 << x)
